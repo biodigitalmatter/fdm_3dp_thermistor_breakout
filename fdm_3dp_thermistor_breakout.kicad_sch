@@ -444,6 +444,19 @@
     (uuid 784f119a-6f5d-4a8e-a596-5a999aa7f9fd)
   )
 
+  (hierarchical_label "Thermistor" (shape input) (at 120.65 101.6 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 41ae906d-b429-48e7-8e3c-19271baf9047)
+  )
+  (hierarchical_label "+5V" (shape input) (at 120.65 87.63 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 74339dd6-b104-42f5-b47f-e6074d2c932c)
+  )
+  (hierarchical_label "GND" (shape input) (at 120.65 118.11 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 841d821f-61f2-43ab-bc48-567d07c6d920)
+  )
+
   (symbol (lib_id "Mechanical:MountingHole") (at 15.24 194.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 11e804cd-f68f-4bb0-98a0-8dd4c96d621f)
@@ -460,7 +473,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "H4") (unit 1)
         )
@@ -480,13 +493,19 @@
     (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 150.8252 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 149.86 110.49 0)
+    (property "Datasheet" "https://octopart.com/datasheet/860130673001-wurth+elektronik-54218090" (at 149.86 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9b5fa18c-a58c-4e08-8e85-5d56af42dffe))
-    (pin "2" (uuid 7b042a02-4912-4514-a825-81c0fd4a7734))
+    (property "MPN1" "Wurth Elektronik:860130673001" (at 149.86 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "SKU1" "Distrelec:302-28-156" (at 149.86 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5cfe7542-0a6a-4afb-8fb0-2c57144a4c6c))
+    (pin "2" (uuid 97cefa65-6268-4a96-aef2-af3316f28f6a))
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "C1") (unit 1)
         )
@@ -510,7 +529,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "H3") (unit 1)
         )
@@ -530,13 +549,19 @@
     (property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical" (at 190.5 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 190.5 101.6 0)
+    (property "Datasheet" "https://octopart.com/datasheet/43650-0215-molex-298121" (at 190.5 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN1" "Molex:43650-0215" (at 190.5 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "SKU1" "Distrelec:144-02-069" (at 190.5 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f477b2e9-f7a1-4a2f-bd8c-790ebe9876c7))
     (pin "2" (uuid 890231b6-617d-407a-abf2-635e89caadef))
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "J2") (unit 1)
         )
@@ -556,13 +581,19 @@
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (at 148.082 95.25 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 149.86 95.25 0)
+    (property "Datasheet" "https://octopart.com/datasheet/mba02040c4701fct00-vishay-43744265" (at 149.86 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "SKU1" "Distrelec:160-59-406" (at 149.86 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN1" "Vishay:MBA02040C4701FCT00" (at 149.86 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid fbb186de-337a-4a2d-a435-2f8890112de4))
     (pin "2" (uuid 499a9ce5-8e05-483b-b314-4691e8cdf797))
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "R1") (unit 1)
         )
@@ -586,7 +617,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "H1") (unit 1)
         )
@@ -610,7 +641,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "H2") (unit 1)
         )
@@ -633,11 +664,17 @@
     (property "Datasheet" "~" (at 106.68 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "MPN1" "Molex:43650-0315" (at 106.68 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "SKU1" "Distrelec:144-02-076" (at 106.68 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 03d30d46-d342-4abe-8913-5cf3918e18d8))
     (pin "2" (uuid ce73e9c6-ee43-4483-9514-625f7412a849))
     (pin "3" (uuid 4152613c-da30-4812-94c4-0d86ee0f6a0b))
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "J1") (unit 1)
         )
@@ -662,7 +699,7 @@
     )
     (pin "1" (uuid d8d45d81-adb4-4cde-8161-1436a996579d))
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "#PWR01") (unit 1)
         )
@@ -687,7 +724,7 @@
     )
     (pin "1" (uuid db54ef4f-5455-482d-b11b-87a1f7a8cfed))
     (instances
-      (project "thermistor"
+      (project "fdm_3dp_thermistor_breakout"
         (path "/c28ea80b-ab5a-400c-b331-afff352bd79f"
           (reference "#PWR02") (unit 1)
         )
